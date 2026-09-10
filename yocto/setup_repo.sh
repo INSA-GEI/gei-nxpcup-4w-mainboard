@@ -1,7 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Setup repo"
 mkdir -p ~/bin
+
+read -r -p "Do you want to install essential packages [y/N] " response
+
+if [[ "$response" =~ ^[Yy]$ ]]; then
+    echo "Install required packages"
+    sudo apt install build-essential chrpath cpio debianutils diffstat file gawk gcc git iputils-ping libacl1 liblz4-tool locales python3 python3-git python3-jinja2 python3-pexpect python3-pip python3-subunit socat texinfo unzip wget xz-utils zstd
+fi
 
 if [ ! -f "$HOME/bin/repo" ]; then
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
