@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Based on manifest robotics-edge-1.0.0.xml from https://github.com/nxp-imx/imx-manifest.git, branch robotics-edge-walnascar
+ -->
   <default revision="walnascar" sync-j="4"/>
 
   <remote name="yp"          fetch="https://git.yoctoproject.org"/>
@@ -22,6 +24,8 @@
 
   <remote name="imx-matter"  fetch="https://github.com/nxp-imx" />
 
+  <remote name="insa-gei"     fetch="https://github.com/INSA-GEI" />
+
   <project name="poky" remote="yp" path="sources/poky" revision="b642d6a4a93a23d5b99886844ff7b224aa7e13bf" upstream="walnascar" />
   <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="dca497d728792e3cb655c78455c2d649af312ce8" upstream="walnascar" />
   <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="003cba92e982bdd565a6889f28799f8bba14957e" upstream="walnascar" />
@@ -42,11 +46,14 @@
   <project name="meta-nxp-connectivity" remote="imx-matter" path="sources/meta-nxp-connectivity" revision="refs/tags/rep-1.0.0" upstream="imx_matter_2025_q3-robotics-edge" />
   <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.34_2.1.0" upstream="walnascar-6.12.34-2.1.0" />
 
- <!-- Real-time Edge Edge Platform Layers -->
+  <!-- Real-time Edge Edge Platform Layers -->
   <project name="meta-rtos-industrial" remote="rte" path="sources/meta-rtos-industrial" revision="refs/tags/Real-Time-Edge-v3.3-202512" upstream="walnascar"/>
   <project name="meta-real-time-edge" remote="rte" path="sources/meta-real-time-edge" revision="refs/tags/Real-Time-Edge-v3.3-202512" upstream="walnascar"/>
   <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="nxp-github" revision="refs/tags/Real-Time-Edge-v3.3-202512" upstream="real-time-edge-walnascar"/>
   <project name="meta-nxp-avb" path="sources/meta-nxp-avb" remote="nxp-github" revision="f72454ccd17ecd0938cdb9ab58b1c663cd8cd99b"/>
+
+  <!-- Specific GEI - NXPCUP -->
+  <project name="meta-gei-nxpcup" path="sources/meta-gei-nxpcup" remote="insa-gei" revision="refs/tags/walnascar-1.0.0"/>
 
   <!-- Robotics Edge Platform Layers -->
   <project name="meta-ros" path="sources/meta-ros" remote="ros" revision="c801edfa16680a57b7caa0cd43468408435cb255" upstream="walnascar"/>
