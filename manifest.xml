@@ -53,7 +53,7 @@
   <project name="meta-nxp-avb" path="sources/meta-nxp-avb" remote="nxp-github" revision="f72454ccd17ecd0938cdb9ab58b1c663cd8cd99b"/>
 
   <!-- Specific GEI - NXPCUP -->
-  <project name="meta-gei-nxpcup" path="sources/meta-gei-nxpcup" remote="insa-gei" revision="refs/tags/walnascar-1.0.0"/>
+  <project name="meta-gei-nxpcup" path="sources/meta-gei-nxpcup" remote="insa-gei" revision="refs/tags/walnascar-1.0.1"/>
 
   <!-- Robotics Edge Platform Layers -->
   <project name="meta-ros" path="sources/meta-ros" remote="ros" revision="c801edfa16680a57b7caa0cd43468408435cb255" upstream="walnascar"/>
